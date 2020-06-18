@@ -1,3 +1,4 @@
+//Example
 var arr = [];
 class Person { // ①
     name =""; 
@@ -10,8 +11,8 @@ class Person { // ①
         this.age = age;
         this.jobTitle = jobtitle;
         
-        arr.push(this.name, this.age, this.jobTitle);
-    }
+
+    }     //   arr.push(this.name, this.age, this.jobTitle);
 
 
 outputName() { 
@@ -22,6 +23,25 @@ outputName() {
 
 }
 
+// Example 2
+class employee extends Person{
+    salary;
+    jobLocation;
+
+    constructor(name, age, jobtitle,salary, jobLocation){
+        super(name, age, jobtitle);
+        this.salary = salary;
+        this.jobLocation = jobLocation;
+       // arr.push(super.name, super.age, super.jobTitle, this.salary,this.jobLocation);
+    }
+
+    showInfoEmployer(){
+        return `${super.outputName()} and i earn ${this.salary} 
+        and i work in ${this.jobLocation}` 
+    }
+
+}
+
     var Name1 = new Person("Manu","41","web developer");
     var Name2 = new Person("Peter","36","expression dancer");
 
@@ -29,5 +49,17 @@ outputName() {
    console.log(Name1.outputName());
    console.log(Name2.outputName());
 
-   console.log(arr);
+   var Name3 = new employee("Manu","41","web developer",50000,"Vienna");
+   var Name4 = new employee("Peter","36","expression dancer",60000,"Vienna");
+
+  // console.log(outputName.Name1());
+  console.log(Name3.showInfoEmployer());
+  console.log(Name4.showInfoEmployer());
+
+
+   //let text = ${#output};
+
+   
+
+ //  console.log(arr);
 
