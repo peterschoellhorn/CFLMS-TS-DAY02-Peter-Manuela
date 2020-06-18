@@ -1,0 +1,21 @@
+
+
+Parent Class: Vehicle   --> 2 Varianten Vehikel: SUV und Sportscar (Objekte)
+
+   kilometers =""; 
+    fuel_type = ""; 
+    year= "";
+    id="";
+    number_seat="";
+
+
+Child Class: Truck --> parentclass + Ladefläche
+	
+
+
+Child Class: MotorBike-->  parentclass + helmet
+	color helmet
+
+
+
+Fahrrad: Vehicle OHNE fuel_type und Sitze

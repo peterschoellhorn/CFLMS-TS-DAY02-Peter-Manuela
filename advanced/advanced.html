@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="/advanced/bootstrap-4.5.0-dist/css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <title>Cars</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Find your car</h1>
+        <p class="lead">Get more information of your new vehicle</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/SUV.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Auto1</h5>
+              <p class="card-text" id="output1">Autotyp1: Beispiel parent</p>
+              <button
+                id="button1"
+                class="btn btn-primary"
+                onclick="return showInfo(Auto1)"
+              >
+                Show Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/sport.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Auto2</h5>
+              <p class="card-text" id="output2">Autotyp2: Beispiel Truck</p>
+              <a href="#" class="btn btn-primary">Information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/hummer.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Auto3</h5>
+              <p class="card-text" id="output3">Autotyp3: Beispiel SUV</p>
+              <a href="#" class="btn btn-primary">Information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/mb.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Bike</h5>
+              <p class="card-text" id="output4"></p>
+              <a href="#" class="btn btn-primary">Information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <img src="img/truck.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Auto4</h5>
+                <p class="card-text" id="output5"></p>
+                <a href="#" class="btn btn-primary">Information</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-xs-12 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <img src="img/bike.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fahrrad</h5>
+                <p class="card-text" id="output6">Fahrrad</p>
+                <a href="#" class="btn btn-primary">Information</a>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+    <script src="cars.js"></script>
+  </body>
+</html>
